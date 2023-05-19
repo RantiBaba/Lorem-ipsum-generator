@@ -9,7 +9,8 @@ const App = () => {
   const handleSubmit = e => {
     e.preventDefault()
     let amount = parseInt(count)
-    setText(data.slice(0, amount))
+    setText(data.slice(0, amount)) //* The slice method is used to extract a specified number of items from an array. In this case, we are extracting the first amount items from the data array. The amount variable is set to the value of the count state variable, which is the number of paragraphs to generate.
+    //* See README.md for more info on slice method.
   }
 
   return (
